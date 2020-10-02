@@ -1,5 +1,5 @@
 <?php
 
-include_once("Story1.html");
+include_once("index.html");
 
 ?>
