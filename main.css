@@ -1,0 +1,432 @@
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+
+.float-right {
+    width: 100vw;
+    max-width: 900px;
+    overflow-x: hidden;
+}
+
+#hero {
+    padding-bottom: 80px;
+}
+
+.container-fluid {
+    background-color: black;
+    overflow-x: hidden;
+    padding:0;
+}
+
+.navbar {
+    padding-top:44px;
+    margin-bottom: 12px;
+    margin-left: 18vw;
+}
+
+.hero-content {
+    margin-left: 18vw;
+    font-family: SF Pro Display;
+}
+
+#hero-pic {
+    margin-bottom: 44px;
+}
+.hero-content h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.37px;
+    color: #ff375f;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    width: auto;
+    max-width: 568px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.hero-content .desc {
+    width: auto;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 200;
+    font-stretch: normal;
+    font-style: Light;
+    line-height: 1.5;
+    letter-spacing: 0.75px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+button {
+    width: 195px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #007aff;
+    align-items: center;
+    border: none;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 550;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #005FC7;
+    transition: all 0.3s; 
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.contacts img {
+    height: 100%;
+    opacity: 0.6;
+    margin-left: 2em;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.contacts img:hover {
+    background-color: #323232;
+    opacity: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.portfolio {
+    margin-left: 18vw;
+}
+
+.portfolio h1 {
+    font-family: SF Pro Display;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.item-zoom {
+	position: relative;
+	overflow: hidden;
+    width: 560px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.item-zoom img {
+	vertical-align: top;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    object-fit: fill;
+}
+
+.item-zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#porto-1:hover {
+    filter: drop-shadow(0px 11px 12px rgba(255, 149, 0, 0.35));
+    transition: all 0.3s;
+}
+
+#porto-1:hover .title-1 {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#porto-2:hover {
+    filter: drop-shadow(0px 11px 12px rgba(0, 177, 187, 0.35));
+    transition: all 0.3s;
+}
+
+#porto-2:hover .title-2 {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#porto-3:hover {
+    filter: drop-shadow(0px 11px 12px rgba(129,129,129,0.35));
+    transition: all 0.3s;
+}
+
+#porto-3:hover .title-3 {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#porto-4:hover {
+    filter: drop-shadow(0px 11px 12px rgba(120, 118, 255, 0.35));
+    transition: all 0.3s;
+}
+
+#porto-4:hover .title-4 {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.title-1, .title-2, .title-3, .title-4 {
+    width: auto;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(143.217px);
+    border-radius: 20px;
+    bottom: 24px;
+    left: 32px;
+    right: 32px;
+    padding: 20px 24px 20px 24px;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    opacity: 0;
+}
+
+.about p {
+    font-family: SF Pro Display;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: white;
+    padding-left: 8vw;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text {
+    max-width: 48vw;
+}
+
+.text:hover span {
+    color: #007aff;
+    transition: all 0.3s;
+}
+.about {
+    margin-bottom: 10vw;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  #row-letsconnect {
+    margin-left: 18vw;
+    margin-right: 15.5vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+    padding: 64px 36px 64px 35px;
+    background-color: #007AFF;
+    border-radius: 16px;
+  }
+
+  .lets-connect .col-sm-3, .col-sm-2, .col-sm-4, .col-sm-3 {
+      padding: 0;
+  }
+  #row-letsconnect p {
+    margin:0;
+  }
+
+  .lets-connect h2 {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+  }
+
+  .lets-connect p {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    color:white;
+  }
+
+  #contact-container {
+      padding: 12px 16px 12px 16px;
+      border-radius: 8px;
+      align-items: center;
+  }
+
+  #contact-container:hover {
+      background-color: #288FFF;
+      transition: all 0.4s;
+      cursor: pointer;
+  }
+
+  .footer p {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 4.5px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+  }
+
+  .footer {
+      margin-bottom: 50px;
+  }
+  .footer .title {
+      font-weight: 300;
+      opacity: 0.5;
+  }
+
+  .cv p {
+    margin:0;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+@media only screen and (max-width: 768px) {
+    .navbar {
+        margin-left: 0;
+        padding-left: 16px;
+    }
+    .hero-content {
+        margin-left: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content .desc {
+        font-size: 16px;
+    }
+
+    .item-zoom {
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .portfolio h1 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+    .portfolio {
+        margin-left: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .contacts img{
+        display: none;
+    }
+
+    #hero-pic {
+        padding-left: 32px;
+        padding-top: 32px;
+    }
+
+    .title-1 {
+        font-size: 18px;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        padding: 16px 20px 16px 20px;
+    }
+
+    .about p {
+        font-size: 32px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    #row-letsconnect {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 28px 20px 28px 20px;
+    }
+
+    .lets-connect h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .lets-connect {
+        margin-bottom: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #contact-container {
+        margin-bottom: 8px;
+    }
+
+    .title-1, .title-2, .title-3, .title-4 {
+        border-radius: 12px;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        padding: 14px;
+        font-size: 18px;
+        font-weight: 400;
+        opacity: 1;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+
